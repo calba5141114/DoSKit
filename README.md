@@ -7,4 +7,8 @@ directed at one domain or another. This tool is intended to be used
 for stress testing and simulated DoS Attack. Never run DoSKit on a 
 domain without the explicit permission of the owner. 
 
+# Goals 
+- Send 1 million requests per second with little memory usage. 
+- Prevent useless resource usage. 
+
 
