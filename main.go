@@ -10,6 +10,7 @@ import (
 var target = flag.String("target", "", "target to run DoS Attack on")
 
 func main() {
+  // channel for accepting responses and passing them through to the pipeline
 	resChannel := make(chan interface{})
 	flag.Parse()
 	if *target == "" {
