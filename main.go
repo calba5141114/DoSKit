@@ -4,6 +4,7 @@ import (
   "flag"
 )
 
+func Target()
+
 func main(){
-  
 }
