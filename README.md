@@ -12,4 +12,5 @@ domain without the explicit permission of the owner.
 - Prevent useless resource usage. 
 - Store Targets in a SQLITE DB that can be pulled up via the CLI
 - Colors on the terminal (rgb)
+- DoSKit Microservice with REST (far out to potential liability and abuse)
 
