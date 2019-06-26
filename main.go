@@ -27,5 +27,5 @@ func main() {
 			resChannel <- resp
 		}
 	}()
-	fmt.Println(<-responseChannel)
+	fmt.Println(<-resChannel)
 }
