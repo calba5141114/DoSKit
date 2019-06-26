@@ -18,7 +18,7 @@ func main() {
 	}
 	fmt.Println(*v)
 	go func() {
-		// infinitie loop
+		// infinite loop
 		for {
 			resp, err := http.Get(*v)
 			if err != nil {
