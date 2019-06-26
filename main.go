@@ -17,6 +17,6 @@ func main() {
 	}
   fmt.Println(*v)
   go func(){
-    
-  }
+
+  }()
 }
