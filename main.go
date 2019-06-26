@@ -24,7 +24,7 @@ func main() {
 			if err != nil {
 				panic(err)
 			}
-			responseChannel <- resp
+			resChannel <- resp
 		}
 	}()
 	fmt.Println(<-responseChannel)
