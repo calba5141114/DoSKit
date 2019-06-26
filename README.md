@@ -11,5 +11,5 @@ domain without the explicit permission of the owner.
 - Send 1 million requests per second with little memory usage. 
 - Prevent useless resource usage. 
 - Store Targets in a SQLITE DB that can be pulled up via the CLI
-- Colors on the terminal
+- Colors on the terminal (rgb)
 
