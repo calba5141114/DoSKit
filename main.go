@@ -12,7 +12,7 @@ var target = flag.String("target", "", "target to run DoS Attack on")
 func main() {
 	responseChannel := make(chan interface{})
 	flag.Parse()
-	if *v == "" {
+	if *target == "" {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
