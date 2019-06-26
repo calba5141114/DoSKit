@@ -20,7 +20,7 @@ func main() {
 	go func() {
 		// infinite loop
 		for {
-			resp, err := http.Get(*v)
+			resp, err := http.Get(*target)
 			if err != nil {
 				panic(err)
 			}
