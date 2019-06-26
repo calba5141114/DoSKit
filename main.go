@@ -1,9 +1,9 @@
 package main
 
 import (
-	"net/http"
 	"flag"
 	"fmt"
+	"net/http"
 	"os"
 )
 
@@ -17,6 +17,6 @@ func main() {
 	}
 	fmt.Println(*v)
 	go func() {
-    http.Get(*v)
+		http.Get(*v)
 	}()
 }
