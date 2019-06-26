@@ -15,5 +15,8 @@ func main() {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
-	fmt.Println(*v)
+  fmt.Println(*v)
+  go func(){
+    
+  }
 }
