@@ -9,3 +9,4 @@ WORKDIR $GOPATH/src/github.com/calba5141114/DoSKit
 COPY . .
 
 # get all dependencies
+RUN go get -d -v ./...
