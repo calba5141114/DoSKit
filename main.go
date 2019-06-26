@@ -17,10 +17,10 @@ func main() {
 	}
 	fmt.Println(*v)
 	go func() {
-    resp, err := http.Get(*v)
-    if err != nil {
-      panic(err)
-    }
-    fmt.Println(resp)
+		resp, err := http.Get(*v)
+		if err != nil {
+			panic(err)
+		}
+		fmt.Println(resp)
 	}()
 }
