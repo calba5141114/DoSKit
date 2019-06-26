@@ -10,6 +10,7 @@ import (
 var v = flag.String("target", "", "target to run DoS Attack on")
 
 func main() {
+  responseChannel
 	flag.Parse()
 	if *v == "" {
 		flag.PrintDefaults()
