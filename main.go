@@ -6,7 +6,7 @@ import (
 )
 
 func main(){
-  v := flag.String("target", "", "target to run DoS Attack on")
+  flag.String("target", "", "target to run DoS Attack on")
   flag.Parse()
-  fmt.Println()
+  fmt.Println(flag.Args())
 }
