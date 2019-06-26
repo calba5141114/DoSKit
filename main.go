@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 )
-v := flag.String("target", "", "target to run DoS Attack on")
+var v = flag.String("target", "", "target to run DoS Attack on")
 
 func main() {
 
