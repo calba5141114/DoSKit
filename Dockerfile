@@ -1,3 +1,4 @@
+# project base image
 FROM golang:1.11
 
 # Maintain and Workdir
