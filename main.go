@@ -24,5 +24,5 @@ func main() {
 		}
 		responseChannel <- resp
   }()
-  fmt.Println()
+  fmt.Println(<- responseChannel)
 }
