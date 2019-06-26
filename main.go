@@ -10,11 +10,10 @@ import (
 var v = flag.String("target", "", "target to run DoS Attack on")
 
 func main() {
-
+  flag.Parse()
 	if *v == "" {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
-	flag.Parse()
 	fmt.Println(flag.Args())
 }
