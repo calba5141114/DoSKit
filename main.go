@@ -16,7 +16,7 @@ func main() {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
-	fmt.Println(*v)
+	fmt.Println(*target)
 	go func() {
 		// infinite loop
 		for {
