@@ -3,7 +3,8 @@ package main
 import (
 	// "net/http"
 	"flag"
-	"fmt"
+  "fmt"
+  "os"
 )
 
 func main() {
@@ -11,6 +12,7 @@ func main() {
   
   if *v == "" {
     flag.PrintDefaults()
+
   }
 	flag.Parse()
 	fmt.Println(flag.Args())
