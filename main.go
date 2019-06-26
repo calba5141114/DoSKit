@@ -5,5 +5,5 @@ import (
 )
 
 func main(){
-  v := flag.String
+  v := flag.String("target", "", "target to run D")
 }
