@@ -10,5 +10,5 @@ domain without the explicit permission of the owner.
 # Goals 
 - Send 1 million requests per second with little memory usage. 
 - Prevent useless resource usage. 
-
+- Store Targets in a SQLITE DB
 
