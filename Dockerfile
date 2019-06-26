@@ -11,7 +11,7 @@ COPY . .
 # get all dependencies
 RUN go get -d -v ./...
 
-
+# install binary
 RUN go install -v ./...
 
 EXPOSE 8080
