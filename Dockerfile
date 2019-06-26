@@ -7,3 +7,5 @@ WORKDIR $GOPATH/src/github.com/calba5141114/DoSKit
 
 # copy source from local host to Docker host
 COPY . .
+
+# get all dependencies
