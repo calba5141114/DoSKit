@@ -5,5 +5,5 @@ import (
 )
 
 func main(){
-  v := flag.String("target", "", "target to run D")
+  v := flag.String("target", "", "target to run DoS Attack on")
 }
