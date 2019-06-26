@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-var v = flag.String("target", "", "target to run DoS Attack on")
+var target = flag.String("target", "", "target to run DoS Attack on")
 
 func main() {
 	responseChannel := make(chan interface{})
