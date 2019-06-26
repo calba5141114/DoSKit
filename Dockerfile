@@ -14,6 +14,7 @@ RUN go get -d -v ./...
 # install binary
 RUN go install -v ./...
 
+# expose docker host ports 
 EXPOSE 8080
 
 CMD ["DosKit"]
