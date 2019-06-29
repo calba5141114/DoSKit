@@ -20,7 +20,6 @@ func main() {
 	}
 	fmt.Println(*target)
 	go func() {
-		// infinite loop
 		for {
 			resp, err := http.Get(*target)
 			if err != nil {
@@ -28,6 +27,6 @@ func main() {
 			}
 			resChannel <- resp
 		}
+		fmt.Println(<-resChannel)
 	}()
-	fmt.Println(<-resChannel)
 }
