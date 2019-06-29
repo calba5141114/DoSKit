@@ -9,7 +9,9 @@ import (
 )
 
 func attackHandler(w http.ResponseWriter, r *http.Request) {
-
+	for {
+		
+	}
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
