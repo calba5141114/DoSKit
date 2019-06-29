@@ -26,4 +26,6 @@ utilizing tools like Salt with compiled binaries or by compiling
 the Docker File in the project and using Scheduling tools
 
 ### Running Compiled Binary on the CLI
+``` bash 
 ./DosKit --target="https://www.random.com"
+```
