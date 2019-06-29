@@ -61,7 +61,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "This is DosKit Server: %s\n", r.URL.Path)
 }
 
-func main() {
+func run() {
 	r := mux.NewRouter()
 	r.HandleFunc("/DosAttack", attackHandler).Methods("POST")
 	r.HandleFunc("/", indexHandler).Methods("GET")
