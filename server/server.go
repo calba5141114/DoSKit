@@ -23,7 +23,7 @@ func attackHandler(w http.ResponseWriter, r *http.Request) {
 	responseChannel := make(chan interface{})
 	for {
 		go func() {
-			response, err := http.Get(target)
+			response, err := http.Get(x.target)
 			if err != nil {
 				panic(err)
 			}
