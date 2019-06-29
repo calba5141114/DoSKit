@@ -8,6 +8,10 @@ import (
 	"github.com/gorilla/mux"
 )
 
+type attackRequest struct {
+	target string `json:"target"`
+}
+
 func attackHandler(w http.ResponseWriter, r *http.Request) {
 	responseChannel := make(chan interface{})
 	for {
