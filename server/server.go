@@ -10,7 +10,9 @@ import (
 
 func attackHandler(w http.ResponseWriter, r *http.Request) {
 	for {
-		
+		go func(){
+			
+		}
 	}
 }
 
