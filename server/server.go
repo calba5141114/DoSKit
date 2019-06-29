@@ -1,7 +1,6 @@
 package server
 
 import (
-	"encoding/json"
 	"log"
 	"github.com/gorilla/mux"
 	"net/http"
@@ -14,9 +13,7 @@ func attackHandler(w http.ResponseWriter, r *http.Request){
 
 func indexHandler(w http.ResponseWriter, r *http.Request){
 	w.WriteHeader(http.StatusCreated)
-	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	json.NewEncoder(w).Encode(<-listingChannel)
-
+	w.Header().Set("Content-Type", "application/html; charset=UTF-8")
 }
 
 
