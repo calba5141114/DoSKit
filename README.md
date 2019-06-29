@@ -14,3 +14,16 @@ domain without the explicit permission of the owner.
 - Colors on the terminal (rgb)
 - DoSKit Microservice with REST (far out to potential liability and abuse)
 
+# News 
+### CLI 
+CLI is working and can successfully execute a DoS Attack.
+Beware if you play with this CLI on servers that are not your own you can suffer grave consequences and your IP can be permanently blocked from 
+attacked sites.
+
+### DDoS
+CLI can be run on any number of hosts for a DDoS attack 
+utilizing tools like Salt with compiled binaries or by compiling 
+the Docker File in the project and using Scheduling tools
+
+### Running Compiled Binary on the CLI
+./DosKit --target="https://www.random.com"
