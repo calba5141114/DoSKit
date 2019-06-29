@@ -15,6 +15,11 @@ type attackRequest struct {
 
 func attackHandler(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
+	var x attackRequest
+	err := decoder.Decode(&x)
+	if err != nil {
+		panic(err)
+	}
 	responseChannel := make(chan interface{})
 	for {
 		go func() {
