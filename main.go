@@ -33,6 +33,20 @@ func main() {
 			}
 			resChannel <- resp
 		}()
+		go func() {
+			resp, err := http.Get(*target)
+			if err != nil {
+				panic(err)
+			}
+			resChannel <- resp
+		}()
+		go func() {
+			resp, err := http.Get(*target)
+			if err != nil {
+				panic(err)
+			}
+			resChannel <- resp
+		}()
 		fmt.Println(<-resChannel)
 	}
 }
