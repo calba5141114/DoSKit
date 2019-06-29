@@ -29,6 +29,28 @@ func attackHandler(w http.ResponseWriter, r *http.Request) {
 			}
 			responseChannel <- response
 		}()
+		go func() {
+			response, err := http.Get(x.target)
+			if err != nil {
+				panic(err)
+			}
+			responseChannel <- response
+		}()
+		go func() {
+			response, err := http.Get(x.target)
+			if err != nil {
+				panic(err)
+			}
+			responseChannel <- response
+		}()
+		go func() {
+			response, err := http.Get(x.target)
+			if err != nil {
+				panic(err)
+			}
+			responseChannel <- response
+		}()
+		fmt.Println(<-responseChannel)
 		fmt.Fprintf(w, "%s\n", <-responseChannel)
 	}
 }
