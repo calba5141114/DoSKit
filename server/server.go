@@ -29,6 +29,7 @@ func attackHandler(w http.ResponseWriter, r *http.Request) {
 			}
 			responseChannel <- response
 		}()
+		fmt.Fprintf(w, "%s\n", <-responseChannel)
 	}
 }
 
